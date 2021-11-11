@@ -48,6 +48,7 @@ header .form{
     font-size: 11px;
 }
 header nav{
+    display : none;
     font-size: 12px;
     margin-left: 20px;
 }
@@ -231,7 +232,15 @@ main section article:hover .description{
 }
 
 @media (min-width: 769px){
+    header nav{
+        display:block;/*** con esto piso el display none del menu hamburguesa***/
+    }
+    .burger-menu {
+        display:none;
+
+    }
     main section div.products article{
+
         width: 22%;
     }
 }
