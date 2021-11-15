@@ -21,12 +21,14 @@ div.top-header{
     display: flex;
     flex-wrap: wrap;
     padding: 5%;
+    height:auto;
+    
 }
 
 header div.top-header p{
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
+    width: 33%;
+    text-align:center;
+    margin:auto;
 }
 
 header{
@@ -35,29 +37,52 @@ header{
 
 header div.logo,
 header .form{
-    width: 50%;
+    width: 33%;
 }
 
 header div.logo{
     padding: 10px;
+    
 }
+
 header .form{
+    width: 33%;
     display: flex;
     align-items: center;
     padding: 2px;
     font-size: 11px;
 }
 header nav{
-    display : none;
+    display : none;/*** para menu hamburguesa***/
     font-size: 12px;
     margin-left: 20px;
+    
+}
+ header nav div{
+     padding: 2%;
+     width: 100%;
+     display: flex;
+ }
+header ul li{
+    
+    display: inline-block;
+    
+}
+.lista1, .lista2{
+    
+    width: 40%;
+    flex: 40%;
+}
+.lista1{
+    text-align: left;
+}
+.lista2{
+    text-align: right;
 }
 
-header ul li{
-    list-style-type: none;
-}
 
 header ul li a{
+    margin: 10px;
     text-decoration: none;
     color: #000;
 }
@@ -67,7 +92,7 @@ header .form .input{
     border: 1px solid #000;
     outline: none;
     color: #666;
-    padding: 2px;
+    padding: 8px;
 }
 
 header .form .submit{
@@ -75,6 +100,7 @@ header .form .submit{
     border: 1px solid #000;
     color: #666;
     width: 10%;
+    padding: 8px;
 }
 
 div.burger-menu{
@@ -171,18 +197,16 @@ main section div.products article i{
 footer section {
     padding: 20px 10px;
     text-align: center;
-    border: #666 solid;
-
 }
 footer section i {
     font-size:2em;
     margin-bottom: 10px;
-    color:#0022AA;
+    color:#034994;
 
 }
 
-footer article h3 {
-    color:black;
+footer article h5 {
+    color:#666;
 }
 /***icono carrito que gire 90°***/
 
@@ -242,5 +266,14 @@ main section article:hover .description{
     main section div.products article{
 
         width: 22%;
+    }
+    
+    footer section {
+        display: flex;
+        margin: 30px 5px 30px 5px;
+    }
+    footer section div{
+        width: 33%;
+        flex: 33%;
     }
 }
